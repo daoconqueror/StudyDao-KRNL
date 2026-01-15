@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #10b981;
+  /* Emerald 500 */
+  --color-secondary: #fcd34d;
+  /* Amber 300 */
+  --color-dark-bg: #0f172a;
+  /* Slate 900 */
+  --color-glass-bg: rgba(30, 41, 59, 0.7);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+  body {
+    @apply bg-slate-950 text-slate-100 font-sans antialiased;
+    background-image:
+      radial-gradient(at 0% 0%, rgba(16, 185, 129, 0.15) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(252, 211, 77, 0.1) 0px, transparent 50%),
+      radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.15) 0px, transparent 50%),
+      radial-gradient(at 0% 100%, rgba(252, 211, 77, 0.1) 0px, transparent 50%);
+    background-attachment: fixed;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-slate-900/60 backdrop-blur-xl border border-white/10 shadow-xl;
+  }
+
+  .glass-card {
+    @apply bg-slate-800/40 backdrop-blur-md border border-white/5 rounded-2xl hover:bg-slate-800/60 transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply px-6 py-2.5 rounded-xl bg-emerald-500 text-white font-medium hover:bg-emerald-600 transition-colors shadow-lg shadow-emerald-500/20;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-2.5 rounded-xl bg-slate-800 text-slate-200 font-medium hover:bg-slate-700 transition-colors border border-white/10;
+  }
+
+  .input-field {
+    @apply w-full bg-slate-900/50 border border-white/10 rounded-xl px-4 py-3 text-slate-200 focus:outline-none focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 transition-all;
+  }
+
+  @keyframes float {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @keyframes bounce-slow {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite 3s;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s ease-in-out infinite;
+  }
+}
