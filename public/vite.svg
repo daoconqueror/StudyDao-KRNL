@@ -1,1 +1,43 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--logos" width="31.88" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 257"><defs><linearGradient id="IconifyId1813088fe1fbc01fb466" x1="-.828%" x2="57.636%" y1="7.652%" y2="78.411%"><stop offset="0%" stop-color="#41D1FF"></stop><stop offset="100%" stop-color="#BD34FE"></stop></linearGradient><linearGradient id="IconifyId1813088fe1fbc01fb467" x1="43.376%" x2="50.316%" y1="2.242%" y2="89.03%"><stop offset="0%" stop-color="#FFEA83"></stop><stop offset="8.333%" stop-color="#FFDD35"></stop><stop offset="100%" stop-color="#FFA800"></stop></linearGradient></defs><path fill="url(#IconifyId1813088fe1fbc01fb466)" d="M255.153 37.938L134.897 252.976c-2.483 4.44-8.862 4.466-11.382.048L.875 37.958c-2.746-4.814 1.371-10.646 6.827-9.67l120.385 21.517a6.537 6.537 0 0 0 2.322-.004l117.867-21.483c5.438-.991 9.574 4.796 6.877 9.62Z"></path><path fill="url(#IconifyId1813088fe1fbc01fb467)" d="M185.432.063L96.44 17.501a3.268 3.268 0 0 0-2.634 3.014l-5.474 92.456a3.268 3.268 0 0 0 3.997 3.378l24.777-5.718c2.318-.535 4.413 1.507 3.936 3.838l-7.361 36.047c-.495 2.426 1.782 4.5 4.151 3.78l15.304-4.649c2.372-.72 4.652 1.36 4.15 3.788l-11.698 56.621c-.732 3.542 3.979 5.473 5.943 2.437l1.313-2.028l72.516-144.72c1.215-2.423-.88-5.186-3.54-4.672l-25.505 4.922c-2.396.462-4.435-1.77-3.759-4.114l16.646-57.705c.677-2.35-1.37-4.583-3.769-4.113Z"></path></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <!-- Gradient definitions -->
+  <defs>
+    <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="#0f172a" stroke="url(#bookGradient)" stroke-width="3"/>
+  
+  <!-- Book icon -->
+  <path d="M60 60 L60 140 L100 130 L140 140 L140 60 L100 70 Z" 
+        fill="url(#bookGradient)" 
+        stroke="#cbd5e1" 
+        stroke-width="2"/>
+  
+  <!-- Book pages -->
+  <line x1="100" y1="70" x2="100" y2="130" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="70" y1="85" x2="95" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="70" y1="95" x2="95" y2="95" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="70" y1="105" x2="95" y2="105" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="105" y1="85" x2="130" y2="85" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="105" y1="95" x2="130" y2="95" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="105" y1="105" x2="130" y2="105" stroke="#94a3b8" stroke-width="1.5"/>
+  
+  <!-- Token/coin accent -->
+  <circle cx="150" cy="50" r="18" fill="url(#accentGradient)" stroke="#0f172a" stroke-width="2"/>
+  <text x="150" y="57" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#0f172a">$</text>
+  
+  <!-- AI sparkle -->
+  <g transform="translate(45, 45)">
+    <path d="M0,-8 L2,-2 L8,0 L2,2 L0,8 L-2,2 L-8,0 L-2,-2 Z" fill="#fbbf24" opacity="0.9"/>
+  </g>
+  <g transform="translate(155, 155)">
+    <path d="M0,-6 L1.5,-1.5 L6,0 L1.5,1.5 L0,6 L-1.5,1.5 L-6,0 L-1.5,-1.5 Z" fill="#06b6d4" opacity="0.9"/>
+  </g>
+</svg>
